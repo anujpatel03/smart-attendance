@@ -67,7 +67,7 @@ class Face_Recognition:
                 cv2.rectangle(img,(x,y),(x+w,y+h),(0,255,0),3)
                 id,predict=clf.predict(gray_image[y:y+h,x:x+w])
                 confidence=int((100*(1-predict/300)))                                                                                              
-                conn = mysql.connector.connect(host="localhost", username="root", password="", database="face_recognition_system")
+                conn = mysql.connector.connect(host="localhost", user="root", password="", database="face_recognition_system")
                 my_cursor = conn.cursor()
                     
                 my_cursor.execute("select Name from student where StudentId="+str(id))
