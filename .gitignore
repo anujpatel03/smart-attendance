@@ -1,0 +1,10 @@
+.DS_Store
+env/
+.git/
+AI_FaceRecognition/data
+AI_FaceRecognition/.git
+AI_FaceRecognition/.DS_Store
+AI_FaceRecognition/env
+AI_FaceRecognition/.gitignore
+AI_FaceRecognition/__pycache__
+AI_FaceRecognition/.idea
